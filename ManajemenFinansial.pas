@@ -136,7 +136,7 @@ begin
   writeln('          Daftar Transaksi           ');
   writeln('=====================================');
   TextColor(White);
-  for i := 1 to TotalTransaksi do // Mengulang sebanyak transaksi yang diinput
+  for i := 1 to TotalTransaksi do // Mengulang sebanyak  total transaksi yang diinput
   begin
     writeln('Tanggal: ', Transaksi[i].Tanggal);
     writeln('Keterangan: ', Transaksi[i].Keterangan);
@@ -150,7 +150,7 @@ end;
 var
   pilihan: integer;
 
-begin
+begin // Main program
 clrscr;
   TotalTransaksi := 0;
   Saldo := 0;
